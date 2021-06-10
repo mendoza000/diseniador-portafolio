@@ -1,0 +1,124 @@
+:root{
+	--color-bg: #F1EFFF;
+
+	--color-primary-xl: #B0A7F9;
+	--color-primary-l: #978cf3;
+	--color-primary: #857bdc;
+	--color-primary-o: #7B71D5;
+	--color-primary-xo: #6F65CB;
+
+	--color-secondary-xl: #FDB0CE;
+	--color-secondary-l: #f095b9;
+	--color-secondary: #e97aa6;
+	--color-secondary-o: #DC7BA1;
+	--color-secondary-xo: #DB6B97;
+
+	--color-text: #1b262c;
+	--color-text-l: #3D4950;
+	--color-text-xl: #5F676C;
+}
+
+body{
+	background-color: var(--color-bg);
+	color: var(--color-text);
+	font-family: 'Work Sans', sans-serif;
+}
+
+/*nav*/
+
+.nav{
+	display: flex;
+	background-color: var(--color-primary);
+	padding: 1em;
+
+}
+.nav_list{
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	text-decoration: none;
+	padding: 1px 0;
+	margin: auto;
+	background-color: rgb(27, 38, 44, .9);
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+	left: -100vw;
+	transition: all 1s;
+	top: 0;
+	z-index: 200;
+
+}
+.list_item{
+	margin: 20px;
+	text-align: center;
+	border-bottom: 2px solid var(--color-primary-xo);
+	padding: 5px;
+	color: var(--color-bg);
+	width: 100px;
+}
+.nav_logo{
+	height: 50px;
+	width: 50px;
+	margin-right: 10px;
+}
+.show_menu{
+	background-color: var(--color-secondary-o);
+	padding: 7px;
+	border-radius: 50px;
+	border: 2px solid var(--color-secondary-xo);
+	width: 30px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	left: 260px;
+	top: 16px;
+	z-index: 500;
+	transition: all 1s;
+}
+.show_menu:active{
+	background-color: var(--color-secondary-l);
+	transition: all 1s;
+}
+.menu_icon{
+	font-size: 22px;
+	font-weight: bolder;
+}
+
+/*slider*/
+.slider{
+	height: 330px;
+	background-color: var(--color-primary-xo);
+	display: flex;
+	align-content: center;
+	align-items: center;
+}
+.slider_img{
+	width: 100%;
+	transition: all 1500ms;
+}
+.slider_1{
+	position: absolute;
+	left: 0;
+}
+.slider_2{
+	position: absolute;
+	left: -100vw;
+}
+.slider_3{
+	position: absolute;
+	left: -100vw;
+}
+.slider_right{
+	z-index: 5;
+	position: absolute;
+	right: 10px;
+}
+.right_icon{
+	font-size: 40px;
+	color: var(--color-secondary);
+}

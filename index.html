@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Diseñador - portafolio</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- work sans -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+	<!-- lineawesome -->
+	<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+</head>
+<body>
+	<header>
+		<nav class="nav">
+			<img src="img/logo.png" alt="logo example" class="nav_logo">
+			<p class="nav_title">NAME</p>
+
+			<a class="show_menu" onclick="showMenu()"><i class=" menu_icon las la-stream"></i></a>
+			<ul class="nav_list" id="nav_list">
+				<li class="list_item">Inicio</li>
+				<li class="list_item">Sobre mi</li>
+				<li class="list_item">Trabajos</li>
+				<li class="list_item">Contacto</li>
+			</ul>
+		</nav>
+
+		<div class="slider">
+			<a onclick="sliderMove()" class="slider_right">
+				<i class="right_icon las la-angle-right"></i>
+			</a>
+			<img id="slider_1" class="slider_img slider_1" src="img/slider1.jpg">
+			<img id="slider_2" class="slider_img slider_2" src="img/slider2.jpg">
+			<img id="slider_3" class="slider_img slider_3" src="img/slider3.jpg">
+		</div>
+
+	</header>
+
+<script src="js/script.js"></script>
+</body>
+</html>
