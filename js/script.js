@@ -25,7 +25,7 @@ const sliderMove = async () =>{
 			slider1.style.left   = "-200vw"
 		}, 1500);
 		await setTimeout(function() {
-			slider2.style.zIndex = "1"
+			slider2.style.zIndex = "50"
 		}, 50);
 		await setTimeout(function() {
 			slider2.style.left = "0"
@@ -39,7 +39,7 @@ const sliderMove = async () =>{
 			slider2.style.left   = "-100vw"
 		}, 1500);
 		await setTimeout(function() {
-			slider3.style.zIndex = "1"
+			slider3.style.zIndex = "50"
 		}, 50);
 		await setTimeout(function() {
 			slider3.style.left = "0"
@@ -53,8 +53,8 @@ const sliderMove = async () =>{
 			slider3.style.left   = "-100vw"
 		}, 1500);
 		await setTimeout(function() {
-			slider1.style.zIndex = "1"
-		}, 50);
+			slider1.style.zIndex = "50"
+		}, 1);
 		await setTimeout(function() {
 			slider1.style.left = "0"
 		}, 100);
