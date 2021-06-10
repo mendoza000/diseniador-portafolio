@@ -17,12 +17,11 @@ const showMenu = () =>{
 }
 
 const sliderMove = async () =>{
-	console.log("asd");
 	if (viewSlider === 1) {
 		slider1.style.left = "100vw"
 		await setTimeout(function() {
 			slider1.style.zIndex = "-300"
-			slider1.style.left   = "-200vw"
+			slider1.style.left   = "-100vw"
 		}, 1500);
 		await setTimeout(function() {
 			slider2.style.zIndex = "50"
@@ -35,6 +34,7 @@ const sliderMove = async () =>{
 	else if (viewSlider === 2) {
 		slider2.style.left = "100vw"
 		await setTimeout(function() {
+
 			slider2.style.zIndex = "-300"
 			slider2.style.left   = "-100vw"
 		}, 1500);
