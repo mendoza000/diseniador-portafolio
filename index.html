@@ -20,10 +20,11 @@
 
 			<a class="show_menu" onclick="showMenu()"><i class=" menu_icon las la-stream"></i></a>
 			<ul class="nav_list" id="nav_list">
-				<li class="list_item">Inicio</li>
-				<li class="list_item">Sobre mi</li>
-				<li class="list_item">Trabajos</li>
-				<li class="list_item">Contacto</li>
+				<li class="list_item"><a href="#">Inicio</a></li>
+				<li class="list_item"><a href="#about">Sobre mi</a></li>
+				<li class="list_item"><a href="#trabajos">Trabajos</a></li>
+				<!-- <li class="list_item"><a href="#paquetes">Paquetes</a></li> -->
+				<li class="list_item"><a href="#contactos">Contacto</a></li>
 			</ul>
 		</nav>
 
@@ -42,7 +43,7 @@
 	</header>
 
 	<div class="container">
-		<div class="about">
+		<div class="about" id="about">
 			<div class="about1">
 				<div class="circle"></div>
 				<span class="about_title">About <span class="cs">Me</span></span>
@@ -50,12 +51,12 @@
 			<p class="about_text"><span class="cs">Lorem</span> ✌, ipsum dolor sit amet consectetur adipisicing, elit. Quos, quaerat. Blanditiis at aut quis recusandae magnam tempore aliquid facilis laborum quae perferendis rem fugiat itaque similique, animi dolorem accusamus, ducimus.</p>
 		</div>
 
-		<div style="height: 150px; overflow: hidden; margin-top: -100px;" >
+		<div style="height: 140px; overflow: hidden; margin-top: -100px; margin-bottom: -1px;">
 			<svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 70px; width: 100%; position: relative; top: 80px;">
 				<path d="M-0.27,122.86 C147.01,100.16 377.82,-68.58 500.00,49.98 L500.00,150.00 L-7.05,156.41 Z" style="stroke: none; fill: #857bdc;"></path>
 			</svg>
 		</div>
-		<div class="gallery">
+		<div class="gallery" id="trabajos">
 			<span class="gallery_title">Trabajos</span>
 			<img src="img/img1.jpg" alt="">
 			<img src="img/img2.jpg" alt="">
@@ -67,8 +68,8 @@
 			<img src="img/slider3.jpg" alt="">
 		</div>
 
-		<div class="paquetes">
-			<span class="paquetes_title">Paquetes</span>
+		<div class="paquetes" id="paquetes">
+			<span class="paquetes_title title_middle">Paquetes</span>
 			<div class="pa_card">
 				<p class="card_title"><i class="card_icon las la-pen"></i> Basico</p>
 				<p class="card_text">Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Culpa incidunt, praesentium suscipit non in repellat! Natus non tempore laudantium facere.</p>
@@ -81,14 +82,14 @@
 				<span class="price">20$</span>
 			</div>
 
-			<div class="pa_card">
+			<div class="pa_card card_middle">
 				<p class="card_title"><i class="card_icon las la-magic"></i> Completo</p>
 				<p class="card_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat officia accusamus itaque voluptates tempora saepe iusto, impedit possimus ad doloribus.</p>
 				<span class="price">50$</span>
 			</div>
 		</div>
 
-		<div class="contact">
+		<div class="contact" id="contactos">
 			<p class="contact_title">Contactos</p>
 			<div class="contact_content">
 				<a href="https://twitter.com" class="contact_btn" target="_blank"><i class="lab la-twitter contact_icon"></i>Twitter</a>
