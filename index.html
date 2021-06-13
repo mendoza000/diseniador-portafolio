@@ -11,6 +11,11 @@
 	<link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
 	<!-- lineawesome -->
 	<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+	<!-- animate css -->
+	 <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 <body>
 	<header>
@@ -29,7 +34,7 @@
 		</nav>
 
 		<div class="slider">
-			<div class="slider_title_container">
+			<div class="slider_title_container wow animate__animated animate__fadeInLeft animate__slow">
 				<span class="slider_title">Your name✍</span>
 			</div>
 			<a onclick="sliderMove()" class="slider_right">
@@ -45,10 +50,10 @@
 	<div class="container">
 		<div class="about" id="about">
 			<div class="about1">
-				<div class="circle"></div>
-				<span class="about_title">About <span class="cs">Me</span></span>
+				<div class="circle wow animate__animated animate__fadeInLeft animate__slow"></div>
+				<span class="about_title wow animate__animated animate__fadeInLeft animate__slow">About <span class="cs">Me</span></span>
 			</div>
-			<p class="about_text"><span class="cs">Lorem</span> ✌, ipsum dolor sit amet consectetur adipisicing, elit. Quos, quaerat. Blanditiis at aut quis recusandae magnam tempore aliquid facilis laborum quae perferendis rem fugiat itaque similique, animi dolorem accusamus, ducimus.</p>
+			<p class="about_text wow animate__animated animate__fadeInLeft animate__slow"><span class="cs">Lorem</span> ✌, ipsum dolor sit amet consectetur adipisicing, elit. Quos, quaerat. Blanditiis at aut quis recusandae magnam tempore aliquid facilis laborum quae perferendis rem fugiat itaque similique, animi dolorem accusamus, ducimus.</p>
 		</div>
 
 		<div style="height: 140px; overflow: hidden; margin-top: -100px; margin-bottom: -1px;">
@@ -57,32 +62,33 @@
 			</svg>
 		</div>
 		<div class="gallery" id="trabajos">
-			<span class="gallery_title">Trabajos</span>
-			<img src="img/img1.jpg" alt="">
-			<img src="img/img2.jpg" alt="">
-			<img src="img/img5.jpg" alt="">
-			<img src="img/img4.jpg" alt="">
-			<img src="img/img3.jpg" class="img5" alt="">
-			<img src="img/slider1.jpg" alt="" class="img7">
-			<img src="img/slider2.jpg" alt="">
-			<img src="img/slider3.jpg" alt="">
+			<span class="gallery_title wow animate__animated animate__fadeInLeft animate__slow">Trabajos</span>
+			<img src="img/img1.jpg" alt="" >
+			<img src="img/img2.jpg" alt="" >
+			<img src="img/img5.jpg" alt="" >
+			<img src="img/img4.jpg" alt="" >
+			<img src="img/img3.jpg" class="img5" alt="" >
+			<img src="img/slider1.jpg" alt=""  class="img7">
+			<img src="img/slider2.jpg" alt="" >
+			<img src="img/gif1.gif" alt="" >
+			<img src="img/slider3.jpg" alt="" >
 		</div>
 
 		<div class="paquetes" id="paquetes">
-			<span class="paquetes_title title_middle">Paquetes</span>
-			<div class="pa_card">
+			<span class="paquetes_title title_middle wow animate__animated animate__fadeInLeft animate__slow">Paquetes</span>
+			<div class="pa_card wow animate__animated animate__fadeInLeft animate__slow">
 				<p class="card_title"><i class="card_icon las la-pen"></i> Basico</p>
 				<p class="card_text">Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Culpa incidunt, praesentium suscipit non in repellat! Natus non tempore laudantium facere.</p>
 				<span class="price">10$</span>
 			</div>
 			
-			<div class="pa_card">
+			<div class="pa_card wow animate__animated animate__fadeInLeft animate__slow">
 				<p class="card_title"><i class="card_icon las la-paint-brush"></i> Middle</p>
 				<p class="card_text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores animi impedit reprehenderit commodi exercitationem omnis, sed eius quam, distinctio molestias.</p>
 				<span class="price">20$</span>
 			</div>
 
-			<div class="pa_card card_middle">
+			<div class="pa_card wow animate__animated animate__fadeInLeft animate__slow card_middle">
 				<p class="card_title"><i class="card_icon las la-magic"></i> Completo</p>
 				<p class="card_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat officia accusamus itaque voluptates tempora saepe iusto, impedit possimus ad doloribus.</p>
 				<span class="price">50$</span>
@@ -90,22 +96,27 @@
 		</div>
 
 		<div class="contact" id="contactos">
-			<p class="contact_title">Contactos</p>
+			<p class="contact_title wow animate__animated animate__fadeInLeft animate__slow">Contactos</p>
 			<div class="contact_content">
-				<a href="https://twitter.com" class="contact_btn" target="_blank"><i class="lab la-twitter contact_icon"></i>Twitter</a>
+				<a href="https://twitter.com" class="contact_btn wow animate__animated animate__fadeInLeft animate__slow" target="_blank"><i class="lab la-twitter contact_icon"></i>Twitter</a>
 
-				<a href="https://instagram.com" target="_blank" class="contact_btn"><i class="lab la-instagram contact_icon"></i>Instagram</a>
+				<a href="https://instagram.com" target="_blank" class="contact_btn wow animate__animated animate__fadeInLeft animate__slow"><i class="lab la-instagram contact_icon"></i>Instagram</a>
 
-				<a href="https://t.me" target="_blank" class="contact_btn"><i class="lab la-telegram contact_icon"></i>Telegram</a>
+				<a href="https://t.me" target="_blank" class="contact_btn wow animate__animated animate__fadeInLeft animate__slow"><i class="lab la-telegram contact_icon"></i>Telegram</a>
 			</div>
 		</div>
 	</div>
 
+<!-- wow.js -->
+<script src="./js/wow.min.js"></script>
+<script>
+	new WOW().init();
+</script>
 <script src="js/script.js"></script>
 </body>
 <footer>
-	<p><i class="las la-copyright"></i>Pagina diseñadas por: <a href="https://twitter.com/mendoza000x">Omar Mendoza</a></p>
-	<p><i class="las la-copyright"></i>Imagenes diseñadas por: <a href="https://twitter.com/sailorglitch_">@sailorglitch_</a></p>
+	<p><i class="las la-copyright"></i>Pagina diseñadas por: <a target="_blank" href="https://twitter.com/mendoza000x">Omar Mendoza</a></p>
+	<p><i class="las la-copyright"></i>Imagenes diseñadas por: <a target="_blank" href="https://twitter.com/sailorglitch_" >@sailorglitch_</a></p>
 	<p class="footer_sub">Portafolio de ejemplo con imagenes de ejemplo extraidas de la cuenta de twitter del autor.</p>
 </footer>
 </html>
